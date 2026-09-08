@@ -1,10 +1,9 @@
 # stable official Java runtime base image
-FROM openjdk:17-jdk-alpine
+#FROM openjdk:17-jdk-alpine
 
-# metadata
-LABEL maintainer="your-email@example.com"
-LABEL version="1.0"
-LABEL description="A simple Java application"
+# FROM openjdk:17-jdk-alpine is not run then use (eclipse temurin is an OpenJDK distribution maintained by the Eclipse Adoptium project)
+FROM eclipse-temurin:17-jdk-alpine
+
 
 # working directory
 WORKDIR /app
